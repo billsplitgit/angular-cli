@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CustomerComponent } from './customer/customer.component';
 import { OrdersComponent } from './orders/orders.component';
 import { SearchBoxDirective } from './search-box.directive';
+import { SalesDataService } from './sales-data.service';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,7 @@ import { SearchBoxDirective } from './search-box.directive';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [SalesDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
